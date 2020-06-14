@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorDefault"
+        app:title="Gọi Trợ Giúp Sự Cố"
+        app:titleTextColor="#fff"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SỐ ĐIỆN THOẠI TRUNG TÂM GẦN BẠN"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#111"
+        android:layout_marginTop="15dp"
+        android:textSize="15sp"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/edtPhoneHelp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_search_name"
+            android:inputType="number"
+            android:hint="Nhập số điện thoại gọi trợ giúp"
+            android:gravity="center"/>
+
+        <ImageView
+            android:onClick="onClickCall"
+            android:id="@+id/dialPhoneCall"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_phone_32dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="10dp"/>
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rListPhoneHelp"
+        android:layout_marginTop="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

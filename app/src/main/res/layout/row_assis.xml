@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/lnClick"
+    >
+
+    <ImageView
+        android:id="@+id/imgPicAssis"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_ron95_iii"
+        android:layout_margin="10dp"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp">
+
+        <TextView
+            android:id="@+id/tvNameBrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại hãng :"
+            android:textSize="20sp"
+            android:textColor="#111"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5sp"
+            android:text="0989112136"
+            android:textColor="#111"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:id="@+id/tvPhoneHelp"/>
+    </LinearLayout>
+</LinearLayout>

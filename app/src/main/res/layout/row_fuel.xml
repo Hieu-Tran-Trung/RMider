@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imgPicture"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_ron95_iii"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xăng RON95-III"
+            android:textSize="20sp"
+            android:textColor="#111"
+            android:textStyle="bold"/>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đơn giá: 20.000 VND"
+            android:textColor="#111"
+            android:textStyle="bold"
+            android:id="@+id/txtPrice"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số Tiền :"
+                android:textColor="#111"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtMoney"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:background="#1111"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_gravity="end"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="#1111"
+                android:gravity="center"
+                android:text="VNĐ"
+                android:textColor="#111"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvTotalLit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tổng Lít: 5 lít"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+</LinearLayout>

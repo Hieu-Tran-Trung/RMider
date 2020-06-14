@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.rmider"
+    tools:ignore="ExtraText">
+
+    <dist:module dist:instant="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".config.AppConfig"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo_64dp"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo_64dp"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:targetApi="M">
+        <activity android:name=".view.EditLocationActivity"></activity>
+        <activity android:name=".view.RegistryActivity" />
+        <activity android:name=".view.DetailInsuranceActivity" />
+        <activity android:name=".view.InformInsuranceActivity" />
+        <activity android:name=".view.AddLoaction" />
+        <activity android:name=".view.DiaryActivity" />
+        <activity android:name=".view.UserActivity" />
+        <activity android:name=".view.EditMaintain" />
+        <activity android:name=".view.AddScheduleActivity" />
+        <activity android:name=".view.MaintenanceActivity" />
+        <activity android:name=".view.AssistanceActivity" />
+        <activity android:name=".view.InsurranceActivity" />
+        <activity android:name=".view.FuelActivity" />
+        <activity android:name=".view.RepairLocationActivity" />
+        <activity android:name=".view.LawActivity" />
+        <activity android:name=".view.DetailCarActivity" />
+        <activity android:name=".view.HouseActivity" />
+        <activity android:name=".view.RegisterMyCarActivity" />
+        <activity android:name=".view.RegisterMyAvatarActivity" />
+        <activity android:name=".view.LoginActivity" />
+        <activity android:name=".view.RegisterMyInforActivity" />
+        <activity android:name=".view.VerifyActivity" />
+        <activity android:name=".view.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC1TYb-0D8nGoosTwiqClfEe4Cy8ClPDXE" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <provider
+            android:name=".config.GenericFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <receiver android:name=".utils.AlarmUtils"/>
+    </application>
+
+
+</manifest>

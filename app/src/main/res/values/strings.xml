@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">Rmider</string>
+    <string name="NoticeInfoCarInsurance">Hãy nhập thông tin bảo hiểm xe của bạn chúng tôi sẽ gửi thông báo nhắc nhở hết hạn</string>
+
+    <string-array name="array_time">
+        <item>1 Ngày</item>
+        <item>7 Ngày</item>
+        <item>10 Ngày</item>
+        <item>20 Ngày</item>
+        <item>30 Ngày</item>
+    </string-array>
+
+    <string-array name="array_day">
+        <item>Ngày 01</item>
+        <item>Ngày 02</item>
+        <item>Ngày 03</item>
+        <item>Ngày 04</item>
+        <item>Ngày 05</item>
+        <item>Ngày 06</item>
+        <item>Ngày 07</item>
+        <item>Ngày 08</item>
+        <item>Ngày 09</item>
+        <item>Ngày 10</item>
+        <item>Ngày 11</item>
+        <item>Ngày 12</item>
+        <item>Ngày 13</item>
+        <item>Ngày 14</item>
+        <item>Ngày 15</item>
+        <item>Ngày 16</item>
+        <item>Ngày 17</item>
+        <item>Ngày 18</item>
+        <item>Ngày 19</item>
+        <item>Ngày 20</item>
+        <item>Ngày 21</item>
+        <item>Ngày 22</item>
+        <item>Ngày 23</item>
+        <item>Ngày 24</item>
+        <item>Ngày 25</item>
+        <item>Ngày 26</item>
+        <item>Ngày 27</item>
+        <item>Ngày 28</item>
+        <item>Ngày 29</item>
+        <item>Ngày 30</item>
+        <item>Ngày 31</item>
+    </string-array>
+
+    <string-array name="array_month">
+        <item>Tháng 01</item>
+        <item>Tháng 02</item>
+        <item>Tháng 03</item>
+        <item>Tháng 04</item>
+        <item>Tháng 05</item>
+        <item>Tháng 06</item>
+        <item>Tháng 07</item>
+        <item>Tháng 08</item>
+        <item>Tháng 09</item>
+        <item>Tháng 10</item>
+        <item>Tháng 11</item>
+        <item>Tháng 12</item>
+    </string-array>
+
+    <string-array name="array_year">
+        <item>Năm 1970</item>
+        <item>Năm 1971</item>
+        <item>Năm 1972</item>
+        <item>Năm 1973</item>
+        <item>Năm 1974</item>
+        <item>Năm 1975</item>
+        <item>Năm 1976</item>
+        <item>Năm 1977</item>
+        <item>Năm 1978</item>
+        <item>Năm 1979</item>
+        <item>Năm 1980</item>
+        <item>Năm 1981</item>
+        <item>Năm 1982</item>
+        <item>Năm 1983</item>
+        <item>Năm 1984</item>
+        <item>Năm 1985</item>
+        <item>Năm 1986</item>
+        <item>Năm 1987</item>
+        <item>Năm 1988</item>
+        <item>Năm 1989</item>
+        <item>Năm 1990</item>
+        <item>Năm 1991</item>
+        <item>Năm 1992</item>
+        <item>Năm 1993</item>
+        <item>Năm 1994</item>
+        <item>Năm 1995</item>
+        <item>Năm 1996</item>
+        <item>Năm 1997</item>
+        <item>Năm 1998</item>
+        <item>Năm 1999</item>
+        <item>Năm 2000</item>
+        <item>Năm 2001</item>
+        <item>Năm 2002</item>
+        <item>Năm 2003</item>
+        <item>Năm 2004</item>
+        <item>Năm 2005</item>
+        <item>Năm 2006</item>
+        <item>Năm 2007</item>
+        <item>Năm 2008</item>
+        <item>Năm 2009</item>
+        <item>Năm 2010</item>
+        <item>Năm 2011</item>
+        <item>Năm 2012</item>
+        <item>Năm 2013</item>
+        <item>Năm 2014</item>
+        <item>Năm 2015</item>
+        <item>Năm 2016</item>
+        <item>Năm 2017</item>
+        <item>Năm 2018</item>
+        <item>Năm 2019</item>
+        <item>Năm 2020</item>
+    </string-array>
+</resources>

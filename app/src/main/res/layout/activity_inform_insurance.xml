@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDE8EA"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarInsure"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorDefault"
+        app:title="Thông tin bảo hiểm xe"
+        app:titleTextColor="#fff"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/tv_messenger"
+        android:textStyle="bold"
+        android:textColor="#111"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Vui lòng chọn gói bảo hiểm xe của bạn"
+        android:textSize="15dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_sec_1"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="55dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Bảo hiểm vật chất"
+            android:textSize="18dp" />
+
+        <CheckBox
+            android:id="@+id/cbVatchat"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_sec2_64dp"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="55dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Bảo hiểm bắt buộc"
+            android:textSize="18dp" />
+
+        <CheckBox
+            android:id="@+id/cbBatBuoc"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_shield_64dp" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="55dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Đăng Kiểm"
+            android:textSize="18dp" />
+
+        <CheckBox
+            android:id="@+id/cbDangKiem"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_sec3_64dp"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="55dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Loại khác"
+            android:textSize="18dp" />
+
+        <CheckBox
+            android:id="@+id/cbLoaiKhac"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:onClick="clickNewInform"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Tạo mới"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:textSize="16dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/ic_custom_bnt"/>
+</LinearLayout>

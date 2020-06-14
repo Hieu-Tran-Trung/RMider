@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAdd"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorDefault"
+        app:title="Thêm Lịch Bảo Trì"
+        app:titleTextColor="#fff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_custom_2"
+            android:gravity="center"
+            android:text="Nhập Lịch Bảo Trì"
+            android:textColor="#111"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtDate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Ngày bảo trì"
+            android:textColor="#111"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:singleLine="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/ic_custom_1"/>
+        <EditText
+            android:id="@+id/edtDetailMaintaine"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:singleLine="true"
+            android:background="@drawable/ic_custom_1"
+            android:hint="Chi tiết bảo trì"
+            android:textColor="#111" />
+        <EditText
+            android:id="@+id/edtKm"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Số Km đã đi"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:singleLine="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_custom_1"
+            android:textColor="#111"/>
+
+        <EditText
+            android:id="@+id/edtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Chi phí bảo trì"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:singleLine="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_custom_1"
+            android:textColor="#111"/>
+
+        <EditText
+            android:id="@+id/edtNextDate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:singleLine="true"
+            android:hint="Ngày bảo dưỡng tiếp theo"
+            android:textColor="#111"
+            android:background="@drawable/ic_custom_1"
+            />
+        <RadioButton
+            android:id="@+id/rbNotify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Tạo nhắc nhở"
+            />
+        <Button
+            android:onClick="onClickAdd"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_custom_2"
+            android:text="XÁC NHẬN"
+            android:layout_marginTop="20dp"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>
